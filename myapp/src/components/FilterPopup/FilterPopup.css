@@ -1,0 +1,56 @@
+.filter-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.filter-popup h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.filter-popup input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-actions button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-actions button:first-child {
+  background: #4a90e2;
+  color: white;
+}
+
+.filter-actions .cancel-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .filter-popup {
+    width: 90%;
+    padding: 15px;
+  }
+}
